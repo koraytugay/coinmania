@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VanillaTodo</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div id="container">
+  <div id="login-form">
+    Login with username:
+    <input type="text" id="new-user-username">
+    <button id="login-button">Login</button>
+  </div>
+  <div id="current-user-div">
+    <h2 id="current-user-header"></h2>
+    <div id="bitcoin-form">
+      <input id="bitcoin-amount" type="text" />
+      <button id="buy-bitcoin-button" style="background: darkseagreen">Buy Bitcoin</button>
+      <button id="sell-bitcoin-button" style="background: peachpuff">Sell Bitcoin</button>
+    </div>
+  </div>
+  <hr/>
+  <div id="current-bitcoin-price"></div>
+  <div id="table">
+    <table>
+      <thead>
+        <tr>
+          <td>
+            User
+          </td>
+          <td>
+            USD
+          </td>
+          <td>
+            Bitcoin
+          </td>
+          <td>
+            Total Value
+          </td>
+        </tr>
+      </thead>
+      <tbody id="users-table-body">
+      </tbody>
+    </table>
+  </div>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
